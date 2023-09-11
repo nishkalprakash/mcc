@@ -57,7 +57,10 @@ def show(*images, enlarge_small_images = True, max_per_row = -1, font_size = 0):
               + ["</tr><tr>"] 
               + [f"<td style='text-align:center;'><img src='{d}'></td>" for d,_ in l]
               + ["</tr></table>"])
-  IPython.display.display(IPython.display.HTML(html_content))
+  # save the html image to a file
+  with open("image.html", "w") as file:
+    file.write(html_content)
+#   IPython.display.display(IPython.display.HTML(html_content))
 
 # Utility function to load an image from an URL
 def load_from_url(url):

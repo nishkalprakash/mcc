@@ -1,0 +1,6 @@
+# Other requirements to be installed via pip
+
+# pip install -r requirements.txt
+
+ipykernel
+ipywidgets
